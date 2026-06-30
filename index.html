@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Gupta | Senior Node.js Backend Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Ankit Gupta, a Results-oriented Senior Node.js Backend Developer with 4+ years of backend API engineering experience and 12+ years of total software engineering and QA expertise.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Background grid & glow effects -->
+    <div class="bg-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="developer_avatar.png" alt="Ankit Gupta Logo" class="logo-img">
+                <span class="logo-text">Ankit<span class="logo-accent">.dev</span></span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="Ankit Gupta_resume.docx" download class="btn btn-outline btn-sm">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">Available for Remote & Hybrid Roles</div>
+                    <h1 class="hero-title">
+                        Building Scalable <br>
+                        <span class="text-gradient">Backend Architectures</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hi, I'm <strong>Ankit Gupta</strong>, a Senior Node.js Backend Developer specializing in high-performance API engineering, microservices, and serverless deployments. Combining 4+ years of specialized backend engineering with a solid 12+ year track record in quality assurance and data integrity to build ultra-reliable, production-grade applications.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Work</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="mailto:mca2011.ankit@gmail.com" target="_blank" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/ankit-gupta-b555a235/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="tel:+918447593212" title="Call"><i class="fa-solid fa-phone"></i></a>
+                        <span class="location"><i class="fa-solid fa-location-dot"></i> Jabalpur, M.P., India</span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-editor-mockup">
+                        <div class="editor-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="editor-title">server.js</span>
+                        </div>
+                        <div class="editor-body">
+                            <pre><code><span class="token keyword">const</span> express = <span class="token function">require</span>(<span class="token string">'express'</span>);
+<span class="token keyword">const</span> app = <span class="token function">express</span>();
+<span class="token keyword">const</span> port = process.env.PORT || <span class="token number">3000</span>;
+
+/* Deep Backend & AI Expertise */
+const developer = {
+    name: 'Ankit Gupta',
+    role: 'Senior Backend Engineer',
+    core: ['Node.js', 'TypeScript', 'Docker'],
+    cloud: ['AWS microservices', 'AWS Claude', 'Serverless'],
+    testing: ['Jest', 'API Validation', 'CI/CD'],
+    aiReady: true
+};
+
+app.<span class="token function">get</span>(<span class="token string">'/api/v1/status'</span>, (req, res) => {
+    res.<span class="token function">status</span>(<span class="token number">200</span>).<span class="token function">json</span>({
+        status: <span class="token string">'running'</span>,
+        uptime: process.<span class="token function">uptime</span>(),
+        developer: developer
+    });
+});
+
+app.<span class="token function">listen</span>(port, () => {
+    console.<span class="token function">log</span>(<span class="token string">`Server listening on port ${port}`</span>);
+});</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead-text">
+                            I am a Senior Backend Developer with a deep passion for building robust, scalable APIs and microservice architectures.
+                        </p>
+                        <p>
+                            Over the last 4+ years, I have focused on designing scalable RESTful endpoints, migrating monolithic databases to cloud-native serverless systems (AWS Lambda), and setting up seamless deployment pipelines. My current work at <strong>DHIRA</strong> involves containerized Node.js API development and automated deployments for the live <strong>MPlocker Application</strong>.
+                        </p>
+                        <p>
+                            What sets me apart is my <strong>12+ years of total software experience</strong>, including a strong foundation in manual testing and data validation. This background gives me an edge in delivering extremely secure, reliable, and thoroughly tested APIs. I write clean, optimized code because I know exactly how software breaks in production.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4+</span>
+                                <span class="stat-label">Years Node.js Dev</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Years Total IT Exp</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Production Uptime</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-highlights">
+                        <h3>My Core Philosophies</h3>
+                        <div class="philosophy-card">
+                            <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4>Test-Driven Reliability</h4>
+                                <p>Coming from a QA background, my APIs are designed with rigorous boundary checks, validation schemas, and automated testing built-in from day one.</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-card">
+                            <div class="icon-box"><i class="fa-solid fa-server"></i></div>
+                            <div>
+                                <h4>Performance & Scale First</h4>
+                                <p>Whether it is writing low-latency Express routers, optimizing complex database queries, or leveraging Redis caching, I build systems that scale gracefully.</p>
+                            </div>
+                        </div>
+                        <div class="philosophy-card">
+                            <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <h4>AI-Augmented Workflows</h4>
+                                <p>I utilize AI and LLMs (like AWS Claude serverless APIs) to automate tasks and integrate smart models directly into backend systems for intelligent routing and text analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Technical Arsenal</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Backend Core -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i class="fa-brands fa-node-js"></i>
+                            <h3>Backend & Core</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Node.js (Express.js, NestJS)</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">JavaScript (ES6+) & TypeScript</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">RESTful API Design & GraphQL</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Microservices Architecture</span> <span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Authentication (JWT, OAuth2, RBAC)</span> <span class="skill-level">Expert</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Databases & Caching -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>Databases & Caching</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">MongoDB & Mongoose</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">PostgreSQL / MySQL</span> <span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">Redis (Caching & Sessions)</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">SQL Performance Optimization</span> <span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cloud"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Docker & Containerization</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">AWS Lambda & API Gateway</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">AWS CDK & CloudFormation (IaC)</span> <span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">CI/CD (GitHub Actions, GitLab CI)</span> <span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">CloudWatch & Prometheus</span> <span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- AI & Emerging Tech -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>AI & Emerging Tech</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">AWS Claude Serverless APIs</span> <span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">LLM APIs (OpenAI, Gemini)</span> <span class="skill-level">Advanced</span></li>
+                            <li><span class="skill-name">RAG (Retrieval-Augmented Gen)</span> <span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">AI-Assisted Test Automation</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Vector Databases (Pinecone, Chroma)</span> <span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- QA & Engineering Practices -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <i class="fa-solid fa-vial"></i>
+                            <h3>QA & Best Practices</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Unit & Integration Testing (Jest)</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">API Testing (Postman, Supertest)</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Data Digitization & Integrity</span> <span class="skill-level">Expert</span></li>
+                            <li><span class="skill-name">Agile / Scrum Methodologies</span> <span class="skill-level">Expert</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Career Path</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Current Position: DHIRA -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">12/2025 - Present</div>
+                        <div class="timeline-content">
+                            <span class="company-badge">Current Organization</span>
+                            <h3 class="role-title">Senior Software Engineer / Backend Lead</h3>
+                            <h4 class="company-name">DHIRA (Digital Human Interfaces & Robotic Applications)</h4>
+                            <p class="timeline-desc">
+                                Leading the backend development and deployment pipelines for key projects, focusing on highly reliable and scalable API architectures.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Headed the API development, optimization, and system design for the live <strong>MPlocker Application</strong>.</li>
+                                <li>Managed end-to-end API testing and deployment configurations across multiple server tiers: Dev, UAT, and Prod.</li>
+                                <li>Utilized <strong>Docker images</strong> and containerization strategies for highly reliable, environment-agnostic server deployments.</li>
+                                <li>Integrated AI-driven logging analyzers and LLM APIs to perform intelligent error classification and auto-generate API documentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Position 2: TECHVED -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">03/2023 - 09/2025</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Senior Software Engineer (Remote)</h3>
+                            <h4 class="company-name">TECHVED Consulting Pvt Ltd</h4>
+                            <p class="timeline-desc">
+                                Focus on serverless migrations, AWS microservices, and optimizing API performance in a cloud-first environment.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Designed and migrated monolithic APIs to a serverless microservices architecture using AWS Claude, AWS Lambda, API Gateway, and AWS CDK, achieving a 40% reduction in infrastructure costs.</li>
+                                <li>Developed and deployed production-grade AWS microservices using Node.js and TypeScript.</li>
+                                <li>Managed infrastructure deployment configurations in AWS using CloudFormation and CDK (IaC).</li>
+                                <li>Implemented comprehensive observability and performance monitoring by integrating Prometheus and Amazon CloudWatch dashboards.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Position 3: STCO -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">06/2022 - 03/2023</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Software Developer</h3>
+                            <h4 class="company-name">STCO</h4>
+                            <p class="timeline-desc">
+                                Core backend development for a multi-user accounting software (FINAC).
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Designed and implemented a role-based access control system and JSON Web Token (JWT) authentication.</li>
+                                <li>Integrated Redis caching and session management to reduce database queries and lower response times by 25%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Position 4: UWO -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">09/2021 - 06/2022</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Software Developer</h3>
+                            <h4 class="company-name">UWO</h4>
+                            <p class="timeline-desc">
+                                Transitioned into professional backend engineering, modernizing legacy video platform APIs.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Modernized legacy RESTful APIs for real-time video session management and chat features.</li>
+                                <li>Integrated AWS S3 storage and CloudFront CDN, improving media content delivery speeds.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Position 5: Government project -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">06/2015 - 03/2021</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Research Associate (Contractual)</h3>
+                            <h4 class="company-name">Project Directorate on Foot and Mouth Disease</h4>
+                            <p class="timeline-desc">
+                                Validation of scientific tools, digital portals, and data analysis in a national disease monitoring system.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Conducted validation and functional testing for the government-backed surveillance platform (FMDDSS).</li>
+                                <li>Analyzed large datasets for outbreak trend monitoring, ensuring high digital tool accuracy.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Position 6: QA InfoTech -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">12/2011 - 06/2015</div>
+                        <div class="timeline-content">
+                            <h3 class="role-title">Engineer Data Digitization & Production II</h3>
+                            <h4 class="company-name">QA InfoTech</h4>
+                            <p class="timeline-desc">
+                                Quality assurance, manual testing, and cross-platform layout verification for large digital publishing clients.
+                            </p>
+                            <ul class="timeline-bullets">
+                                <li>Validated layout conversion scripts and tested rendering across IE, Firefox, Chrome, and early mobile screens.</li>
+                                <li>Identified, logged, and tracked layout inconsistencies, developing a sharp eye for edge cases.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Projects Filter -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & Docker</button>
+                    <button class="filter-btn" data-filter="qa">QA & Digitization</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: MPlocker -->
+                    <div class="project-card" data-category="backend cloud">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-lock project-icon"></i>
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">UAT/Prod</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>MPlocker Application APIs & Deployment</h3>
+                            <p class="project-desc">
+                                Core API development, performance tuning, and multi-environment containerized deployments for the live MPlocker application. 
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Developed high-throughput API endpoints utilizing Express.js.</li>
+                                <li>Built Docker image configurations for standardized, isolated deployments.</li>
+                                <li>Successfully set up and managed deployments in dev, UAT, and prod servers.</li>
+                            </ul>
+                            <div class="project-links">
+                                <span class="project-status live"><i class="fa-solid fa-circle-check"></i> Live in Production</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Gaming Backend Migration (AWS Bedrock / Claude update) -->
+                    <div class="project-card" data-category="backend cloud">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-gamepad project-icon"></i>
+                            <div class="project-tags">
+                                <span class="tag">AWS Claude</span>
+                                <span class="tag">Serverless</span>
+                                <span class="tag">microservices</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Gaming Backend AWS Claude API Modernization</h3>
+                            <p class="project-desc">
+                                Designed and migrated monolithic APIs to an AWS microservices architecture using AWS Claude, AWS Lambda, API Gateway, and AWS CDK.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Built production-grade AWS microservices leveraging Anthropic Claude models on AWS Bedrock for intelligent routing and serverless API development.</li>
+                                <li>Reduced infrastructure costs by 40% using optimized AWS Lambda and serverless configurations.</li>
+                                <li>Implemented comprehensive observability and performance monitoring with CloudWatch and Prometheus.</li>
+                            </ul>
+                            <div class="project-links">
+                                <span class="project-status live"><i class="fa-solid fa-circle-check"></i> Live in Production</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: FINAC -->
+                    <div class="project-card" data-category="backend">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-file-invoice-dollar project-icon"></i>
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Redis</span>
+                                <span class="tag">JWT Auth</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>FINAC - Multi-User CA Software</h3>
+                            <p class="project-desc">
+                                High-security backend platform handling ledger management, invoicing, GST filing, and financial reporting for accounting firms.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Implemented Redis caching reducing average API latency by 25%.</li>
+                                <li>Designed fine-grained Role-Based Access Control (RBAC) schemas.</li>
+                                <li>Ensured high compliance and security standard via strict JWT verification.</li>
+                            </ul>
+                            <div class="project-links">
+                                <span class="project-status"><i class="fa-solid fa-gears"></i> API Microservice</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Video Streaming Platform -->
+                    <div class="project-card" data-category="backend cloud">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-video project-icon"></i>
+                            <div class="project-tags">
+                                <span class="tag">REST APIs</span>
+                                <span class="tag">S3 Storage</span>
+                                <span class="tag">CloudFront</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Video Streaming Platform APIs</h3>
+                            <p class="project-desc">
+                                Developed core session handling, stream routing, and CDN integrations for low-latency video streaming platform.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Optimized session state management in Node.js.</li>
+                                <li>Configured CloudFront edge rules to route video segments efficiently.</li>
+                                <li>Assisted in tuning load balancers to handle spikes during peak hours.</li>
+                            </ul>
+                            <div class="project-links">
+                                <span class="project-status"><i class="fa-solid fa-photo-film"></i> CDN Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: FMDDSS Portal -->
+                    <div class="project-card" data-category="qa">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-shield-virus project-icon"></i>
+                            <div class="project-tags">
+                                <span class="tag">Govt Project</span>
+                                <span class="tag">Validation</span>
+                                <span class="tag">Data Integrity</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>FMDDSS Outbreak Surveillance Platform</h3>
+                            <p class="project-desc">
+                                A critical government-backed disease monitoring and decision support system spanning multiple agricultural regions.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Conducted validation of scientific algorithms for outbreak predictions.</li>
+                                <li>Optimized database load limits, ensuring system stability.</li>
+                                <li>Ensured 100% data integrity for national livestock records.</li>
+                            </ul>
+                            <div class="project-links">
+                                <span class="project-status"><i class="fa-solid fa-award"></i> Government Approved</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Digitalization Lab -->
+                    <div class="project-card" data-category="qa">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-book-open-reader project-icon"></i>
+                            <div class="project-tags">
+                                <span class="tag">Manual Testing</span>
+                                <span class="tag">Cross-Browser</span>
+                                <span class="tag">UI Verification</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Content Digitization QA Platform</h3>
+                            <p class="project-desc">
+                                Validation pipeline converting massive archives of printed journals and texts into web-compliant interactive layouts.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Created complex test matrices covering multi-device responsiveness.</li>
+                                <li>Significantly improved browser compatibility across legacy systems.</li>
+                                <li>Achieved near 99.8% content layout validation accuracy.</li>
+                            </ul>
+                            <div class="project-links">
+                                <span class="project-status"><i class="fa-solid fa-check-double"></i> QA Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Discuss Your Project</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <p class="contact-subtext">Have an exciting opportunity, a complex API project, or want to discuss serverless backend architectures? Feel free to reach out!</p>
+                        
+                        <div class="info-details">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="info-label">Call Me</span>
+                                    <a href="tel:+918447593212" class="info-value">+91 84475 93212 / +91 63707 54703</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Email Me</span>
+                                    <a href="mailto:mca2011.ankit@gmail.com" class="info-value">mca2011.ankit@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div>
+                                    <span class="info-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/ankit-gupta-b555a235/" target="_blank" class="info-value">Ankit Gupta</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Jabalpur, Madhya Pradesh, India (482002)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" required placeholder=" ">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" required placeholder=" ">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required rows="6" placeholder=" "></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-spinner hidden"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Ankit Gupta. All rights reserved.</p>
+            <p>Designed with <i class="fa-solid fa-heart text-gradient"></i> for Node.js backend excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
